@@ -1,0 +1,95 @@
+<!doctype html>
+<!-- On définit que notre code est en HTML 5 -->
+
+<!-- toutes les pages web sont contenues dans des balises html -->
+<html>
+    <!-- dans la balise head, on met des informations relative à la page mais qui ne sont pas affichées dans son contenu -->
+    <head>
+        
+        <!-- le type d'encodage des caractère. UTF-8 est le plus répandu -->
+        <meta charset="UTF-8" />
+        
+        <!-- la description est adressée aux moteurs de recherche. Elle sert au référencement et apparait comme extrait  de la page dans les résultats de recherche -->
+        <meta name="description" content="Créer et modifier des pages web en HTML et CSS" />
+        
+        <title>Initiation au HTML / Les balises de contenu</title>
+        
+    </head>
+    
+    <body>
+        <h1>Les balises de contenu</h1>
+        <h2>Les titres</h2>
+        <h3>Sous-titres H3</h3>
+        <h4>Sous-titres H4</h4>
+        <h5>Sous-titres H5</h5>
+        <h6>Sous-titres H6</h6>
+        
+        <h2>Les textes</h2>
+        <p>Avec p, créé un paragraphe de texte.</p>
+        
+        <p>Texte de substitution : Politique de retour Amazon.fr:Si vous n’êtes pas satisfait d'un produit que vous avez commandé auprès d'Amazon.fr ou si celui-ci est défectueux ou endommagé, vous pouvez nous le retourner sous 30 jours suivant la date de livraison, et nous vous rembourserons ou remplacerons l'intégralité de l'article. Pour plus d’informations, veuillez consulter notre page en savoir plus sur les Retours et remboursements.
+        </p>
+        
+        <h3>Habiller du texte</h3>
+        <p>
+        Mettre du texte <strong>en gras, avec strong</strong>
+        <br>Faire un retour à la ligne, avec br
+        <br>Mettre du texte <i>en italique, avec i</i>
+        <br>Mettre un filet de séparation avec hr
+        </p>
+        <hr>
+        
+        <h2>Les listes</h2>
+        <h3>Les listes à puces, avec ul (unordered list)</h3>
+        <ul>
+            <li>Eléments de liste</li>
+            <li>Eléments de liste</li>
+            <li>Elements de liste</li>
+          </ul>
+    
+        <h3>Les listes à ordonnées, avec ol (ordered list)</h3>
+        <ol>
+            <li>Eléments de liste</li>
+            <li>Eléments de liste</li>
+            <li>Elements de liste</li>
+          </ol>
+        
+        <h2>Les liens</h2>
+        <h3>Les liens absolus (externe)</h3>
+        <!-- href=adresse du lien / target=pour ouvrir une nouvelle fenêtre/title= titre qui apparait au survol -->
+        <a href="https://genshin.mihoyo.com/fr" target="_blank" title="Aller sur le site de Genshin Impact">Cliquer ici</a> pour aller sur une page externe à mon site.
+        
+        <h3>Les liens relatifs (interne)</h3>
+        <a href="initiation_balise-contenu.html">Cliquer ici</a>pour aller sur une autre page de mon site.
+        
+        <h3>Les liens email (mailto)</h3>
+        <a href="mailto:shunrei.follet@gmail.com">Cliquer ici</a> pour ouvrir un logiciel de messagerie.
+        
+        <h4>Exemple de liens dans une liste</h4>
+        <ul>
+            <li>
+                <a href="https://google.fr" target="_blank">
+                    Aller sur Google
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/sapikdesign/estienne2020" target="_blank">
+                    Aller sur Github
+                </a>
+            </li>
+        
+        <h2>Les images</h2>
+        <!-- scr=chemin vers le fichier / alt=texte alternatif (très important) / width ou height = largeur ou hauteur (par défaut en pixel) -->
+        <a href="https://www.lumni.fr/article/une-initiation-aux-techniques-de-base-du-web-et-d-internet-pour-les-plus-jeunes#containerType=folder&containerSlug=le-html-par-lui-meme-1-2" target="_blank">
+            <img src="img/gif_html.gif" alt="Les différents niveaux du code" height="500">
+        </a>
+        <img src="img/dalton_balise-title.gif" alt="Les différents niveaux de titre avec les Dalton" height="300">    
+        </ul>
+        
+        <h2>La balise span</h2>
+        Texte en <span style=color:red>rouge</span><br><!-- valeur nominale prédéfinie -->
+        Texte en <span style="color:#ffa912">orange</span><br><!-- valeur héxadécimale -->
+        Texte en <span style="color:rgba(0,0,0,0.5)">noir avec une opacité de 50%</span>
+        
+    </body>
+</html>
