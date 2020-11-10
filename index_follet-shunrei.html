@@ -1,0 +1,87 @@
+<! doctype html>
+
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portefolio Graphisme / Webdesign / Formation Wordpress HTML CSS" />
+    <title>Shunrei FOLLET - Opératrice prépresse / Étudiante en Innovation numérique</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+    
+    <body>
+        <main>
+            <header id="top">
+                <nav id="menu-principal">
+                    <ul>
+                        <!-- ancres/miens vers un identifiant dans cette page -->
+                        <li><a href="#portefolio" class="js-scrollTo">Portefolio</a></li>
+                        <li><a href="#contact" class="js-scrollTo">Contact</a></li>
+                    </ul>
+                </nav>
+                <h1 id="top h1">Shunrei FOLLET</h1>
+                <h2 id="top h2">Étudiante en licence Innovation numérique et Opératrice prépresse</h2>
+            
+            </header>
+            <article class="projet">
+            <h2>Communication événementielle</h2>
+            </article> 
+            <section id="portefolio">
+                <article class="projet">
+                    <a href="Images/cv_shunrei_follet.pdf" target="_blank">
+                    <img src="Images/image_pour_cv.jpg">
+                    </a>
+                    <a href="Images/cv_shunrei_follet.pdf" target="_blank" class="bouton-portefolio">Mon CV</a>
+                    
+                </article>
+                
+                <article class="projet">
+                    <a href="Images/book_follet_shunrei.pdf" target="_blank">
+                    <img src="Images/sinziana-susa-SNHsMunOPME-unsplash.jpg">
+                        </a>
+                    <a href="Images/book_follet_shunrei.pdf" target="_blank" class="bouton-portefolio">Mon mémoire de BTS Édition</a>
+                </article>
+                
+                <article class="projet">
+                    <img src="Images/projet_innovation_image.jpg">
+                     <a href="Images/livre_illustres_de_demain.pdf" target="_blank" class="bouton-portefolio">Mon projet de Licence Innovation numérique</a>
+                </article>
+                
+                <article class="projet">
+                    <img src="Images/image_pour_tablet_graphic.jpg">
+                    <a href="Images/dessin_test.png" target="_blank" class="bouton-portefolio">Mes dessins</a>
+                </article>
+            </section>
+            
+            <section id="contact">
+                <h4 id="contact h4">Travaillons ensemble !</h4>
+                <h5 id="contact h5">Shunrei FOLLET</h5>
+                <div>
+                <a href="mailto:&#115;%68u%6e%72ei%2e&#102;&#111;l%6c%65%74&#64;%67&#109;&#97;il%2ec%6f%6d" class="bouton">shunrei.follet&#64;gmail.com
+                </a> 
+                </div>
+                <a href="#top" class="js-scrollTo back-to-top">Retour en haut &uarr;</a>
+                
+            </section>
+            
+        </main>
+            
+        <!-- Smooth scroll -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+                    var page = $(this).attr('href'); // Page cible
+                    var speed = 750; // Durée de l'animation (en ms)
+                    $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+                    return false;
+                });
+            });
+        </script>
+
+            
+    </body>
+    
+</html>

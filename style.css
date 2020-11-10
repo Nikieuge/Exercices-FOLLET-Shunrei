@@ -1,0 +1,140 @@
+@charset:"utf-8";
+
+html, body {
+    height:100%;
+    margin: 0;
+}
+
+* { /* l'astérisque cible tous les blocs */
+    box-sizing: border-box; /* marges et padding seront intégrées dans les dimensions du bloc */
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.5rem;
+    color:burlywood;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+img {
+    max-width: 100%; /* les images ne dépasse jamais la largeur de leur conteneur */
+}
+
+#top {
+    height:100vh; /* 100% de la hauteur de l'écran (viewport height) */
+    background: url(Images/img_banniere_site.jpg) no-repeat center center;
+    background-size: cover; /* l'image s'ajuste pour remplir tout le bloc */
+    padding: 30px 15px; /* haut+bas droite+gauche */
+    text-align: center; /* centre horizontalement les éléments */   
+}
+
+#top h1{
+    font-weight: 600;
+    margin-bottom: auto;
+    font-size: 5rem;
+}
+
+#top h2{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top:3;
+}
+
+#avant portefolio {
+    text-align: center;
+}
+
+
+#menu-principal ul{
+    margin: 0;
+    padding-left: 0; /* marge intérieur gauche */
+    display:flex; /* le conteneur et une flexbox */
+    flex-wrap: wrap; /* les éléments vont à la ligne lorsqu'il n'y a plus de place */
+    justify-content: center; /* les éléments dans le conteneur sont centrés */
+        list-style: none; /* on masque la puce */
+    
+}
+
+#menu-principal a,
+#menu-principal a:visited {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.5rem; /* 1.5 x 16px */ 
+    text-transform: uppercase; /* en majuscule */
+    color:darkred;
+    text-decoration: none; /* pas de soulignement */
+    margin: 0 8px;
+    
+}
+
+#portefolio {
+    display: flex;
+    flex-wrap: wrap; /* si les éléments dépassent, ils vont à la ligne */
+}
+
+.projet {
+    flex-basis: 25%; /* largeur de chaque éléments */
+    text-align: center;
+    padding: 15px;
+}
+
+#contact {
+    text-align: center;
+    padding: 30px 15px;
+    border-top:1px solid firebrick;
+}
+#contact h4{
+    margin-bottom:0;
+    margin-top:3;
+}
+
+#contact h5{
+    margin-top:3;
+    font-weight: 300;
+}
+
+.bouton {
+    display: inline-block; /* permet de lui attribuer un padding */
+    background-color:bisque; 
+    padding: 10px 20px;
+    color: firebrick;
+    text-decoration: none;
+    border-radius: 5px;
+    border:2px solid bisque;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.bouton:hover {
+    background-color: firebrick;
+    color:bisque;
+    border:2px solid bisque;
+}
+
+.back-to-top {
+    position: static;
+    text-decoration: none;
+    color:dimgray;
+    font-size: 1.25rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-top:50px
+}
+
+.bouton-portefolio {
+    text-decoration: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    color:burlywood;
+}
+
+.bouton-portefolio:hover {
+    color: darkred;
+}
+
+/* Media Queries pour la version mobile */
+@media (max-width: 768px){
+    .projet {
+        flex-basis: 50%;
+    }
+}
